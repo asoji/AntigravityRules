@@ -11,6 +11,7 @@ This repository stores personal rule definitions for Google Antigravity under `r
 - `rules/git-pr-workflow.md`: Enforce a branch-and-PR Git workflow using standard `git` tooling, concise under-50-character commits, and no direct commits to the default branch.
 - `rules/github-stacked-prs.md`: Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains when working on GitHub repositories.
 - `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and re-review the agreed plan before acting without deviation.
+- `rules/preview-options-and-diffs.md`: Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user.
 
 ## Rule Authoring & Maintenance Conventions
 

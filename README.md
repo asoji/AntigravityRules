@@ -22,6 +22,7 @@ To install, follow Google Antigravity's official instructions on installing Rule
 | [`git-pr-workflow.md`](rules/git-pr-workflow.md) | `always_on` | Enforce a branch-and-PR Git workflow using standard `git` tooling, under-50-character commit subjects, and no direct commits to the default branch. |
 | [`github-stacked-prs.md`](rules/github-stacked-prs.md) | `model_decision` | Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains on GitHub repositories. |
 | [`plan-before-acting.md`](rules/plan-before-acting.md) | `always_on` | Default to planning mode, prohibit unapproved file or system mutations, and re-review the agreed plan before acting without deviation. |
+| [`preview-options-and-diffs.md`](rules/preview-options-and-diffs.md) | `always_on` | Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user. |
 
 ## License
 
