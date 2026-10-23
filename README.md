@@ -15,10 +15,11 @@ To install, follow Google Antigravity's official instructions on installing Rule
 
 | Rule | Trigger | Description |
 | :--- | :--- | :--- |
+| [`agent-attribution.md`](rules/agent-attribution.md) | `always_on` | Require Markdown H5 attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes. |
 | [`direct-communication.md`](rules/direct-communication.md) | `always_on` | Enforce direct, concise, and technical communication without filler, sycophancy, apologetic meta-commentary, or unnecessary em-dashes. |
 | [`explain-before-executing.md`](rules/explain-before-executing.md) | `always_on` | Require announcing all tool calls, file reads, and shell commands with their target paths, arguments, and rationale before execution. |
-| [`git-commit-attribution.md`](rules/git-commit-attribution.md) | `always_on` | Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:` and prohibit `Signed-off-by:` on AI-assisted commits. |
-| [`git-pr-workflow.md`](rules/git-pr-workflow.md) | `always_on` | Enforce a branch-and-PR Git workflow using standard `git` tooling, under-50-character commit subjects, PR attribution footers, and no direct commits to the default branch. |
+| [`git-commit-attribution.md`](rules/git-commit-attribution.md) | `always_on` | Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:`, prohibit `Signed-off-by:`, and deduplicate trailers on AI-assisted commits. |
+| [`git-pr-workflow.md`](rules/git-pr-workflow.md) | `always_on` | Enforce a branch-and-PR Git workflow using standard `git` tooling, under-50-character commit subjects, and no direct commits to the default branch. |
 | [`github-stacked-prs.md`](rules/github-stacked-prs.md) | `model_decision` | Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains on GitHub repositories. |
 | [`plan-before-acting.md`](rules/plan-before-acting.md) | `always_on` | Default to planning mode, prohibit unapproved file or system mutations, and re-review the agreed plan before acting without deviation. |
 
