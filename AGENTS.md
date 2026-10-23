@@ -7,7 +7,7 @@ This repository stores personal rule definitions for Google Antigravity under `r
 - `rules/direct-communication.md`: Enforce direct, concise, and technical communication without filler, sycophancy, apologetic meta-commentary, or unnecessary em-dashes.
 - `rules/explain-before-executing.md`: Announce all tool calls, file reads, and shell commands with their target paths/arguments and rationale in text before execution.
 - `rules/git-commit-attribution.md`: Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:` and never add `Signed-off-by:` when creating or drafting AI-assisted Git commits.
-- `rules/git-pr-workflow.md`: Enforce a branch-and-PR Git workflow using standard `git` tooling, concise under-50-character commits, and no direct commits to the default branch.
+- `rules/git-pr-workflow.md`: Enforce a branch-and-PR Git workflow using standard `git` tooling, concise under-50-character commits, PR attribution footers, and no direct commits to the default branch.
 - `rules/github-stacked-prs.md`: Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains when working on GitHub repositories.
 - `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and re-review the agreed plan before acting without deviation.
 
