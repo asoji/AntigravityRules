@@ -1,11 +1,11 @@
 ---
 trigger: always_on
-description: "Use the Assisted-by trailer (AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]) instead of Co-authored-by and never add Signed-off-by when creating or drafting AI-assisted Git commits."
+description: "Use the Assisted-by trailer (AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]) instead of Co-authored-by, never add Signed-off-by, and deduplicate trailers on AI-assisted Git commits."
 ---
 
 # Git Commit Attribution
 
-When creating or drafting Git commits for changes assisted by any AI coding assistant (primarily Google Antigravity, as well as tools like Claude Code or OpenAI Codex), follow the Linux kernel AI Coding Assistants attribution guidelines.
+When creating or drafting Git commits for changes assisted by any AI coding assistant (primarily Google Antigravity, as well as tools like Claude Code or OpenAI Codex), follow the attribution rules below, inspired by the Linux kernel AI Coding Assistants guidelines.
 
 ## Signed-off-by and Co-authored-by Restrictions
 
@@ -27,6 +27,11 @@ Where:
 - `[TOOL1] [TOOL2]` are optional specialized analysis tools used (e.g., `coccinelle`, `sparse`, `smatch`, `clang-tidy`).
 
 Basic development tools (`git`, `gcc`, `make`, editors, shells) should not be listed.
+
+## Squash & Multi-Model Hygiene
+
+- **Deduplication**: When squashing, rebasing, or amending commits, deduplicate `Assisted-by:` trailers so each unique `AGENT_NAME:MODEL_VERSION` appears at most once.
+- **Multi-Model Contributions**: If multiple distinct agents or models materially contributed to a commit, list one `Assisted-by:` trailer per unique `AGENT_NAME:MODEL_VERSION`.
 
 ## Examples
 
