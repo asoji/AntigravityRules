@@ -1,16 +1,16 @@
 ---
 trigger: always_on
-description: "Require Markdown H5 attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes."
+description: "Require plaintext attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes."
 ---
 
 # Agent Attribution
 
 ## Pull Requests, Issues, Reviews, and Comments
 
-- **Footer Format**: Append a Markdown H5 heading (`#####`) footer separated by a horizontal rule (`---`) at the end of AI-assisted pull request descriptions, PR reviews, issues, and comments authored by the agent:
+- **Footer Format**: Append a plaintext attribution footer separated by a horizontal rule (`---`) at the end of AI-assisted pull request descriptions, PR reviews, issues, and comments authored by the agent:
   ```markdown
   ---
-  ##### Assisted by Google Antigravity (`gemini-4-argon`)
+  Assisted by Google Antigravity (gemini-4-argon)
   ```
 - **No Promotional Badges**: Do not include emojis, promotional links, or marketing phrasing (such as `Generated with ...`).
 
