@@ -33,8 +33,8 @@ if ($normPath -notmatch '\.(md|markdown)$') {
 # 3. Scratchpad and brain conversation artifacts
 $fileName = Split-Path -Leaf $targetPath
 $isAllowed = ($fileName -in @('AGENTS.md', 'GEMINI.md', 'CLAUDE.md')) -or
-             ($normPath -match '/(\.agents/)?rules/') -or
-             ($normPath -match '/(brain|\.gemini)/')
+             ($normPath -match '(^|/)(\.agents/)?rules/') -or
+             ($normPath -match '(^|/)(brain|\.gemini)/')
 
 if ($isAllowed) {
     Write-Output '{"decision": "allow"}'
