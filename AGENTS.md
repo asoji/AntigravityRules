@@ -4,7 +4,7 @@ This repository stores personal rule definitions for Google Antigravity under `r
 
 ## Active Rules (`rules/`)
 
-- `rules/agent-attribution.md`: Require Markdown H5 attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes.
+- `rules/agent-attribution.md`: Require plaintext attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes.
 - `rules/direct-communication.md`: Enforce direct, concise, and technical communication without filler, sycophancy, apologetic meta-commentary, or unnecessary em-dashes.
 - `rules/explain-before-executing.md`: Announce all tool calls, file reads, and shell commands with their target paths/arguments and rationale in text before execution.
 - `rules/git-commit-attribution.md`: Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:`, never add `Signed-off-by:`, and deduplicate trailers on AI-assisted Git commits.

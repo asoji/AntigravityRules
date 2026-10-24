@@ -15,7 +15,7 @@ To install, follow Google Antigravity's official instructions on installing Rule
 
 | Rule | Trigger | Description |
 | :--- | :--- | :--- |
-| [`agent-attribution.md`](rules/agent-attribution.md) | `always_on` | Require Markdown H5 attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes. |
+| [`agent-attribution.md`](rules/agent-attribution.md) | `always_on` | Require plaintext attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes. |
 | [`direct-communication.md`](rules/direct-communication.md) | `always_on` | Enforce direct, concise, and technical communication without filler, sycophancy, apologetic meta-commentary, or unnecessary em-dashes. |
 | [`explain-before-executing.md`](rules/explain-before-executing.md) | `always_on` | Require announcing all tool calls, file reads, and shell commands with their target paths, arguments, and rationale before execution. |
 | [`git-commit-attribution.md`](rules/git-commit-attribution.md) | `always_on` | Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:`, prohibit `Signed-off-by:`, and deduplicate trailers on AI-assisted commits. |
