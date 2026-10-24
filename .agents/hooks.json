@@ -1,0 +1,17 @@
+{
+  "markdown-guard": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "write_file|edit_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -ExecutionPolicy Bypass -File scripts/guard-markdown.ps1",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
