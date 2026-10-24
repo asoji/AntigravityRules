@@ -26,6 +26,7 @@ To install, follow Google Antigravity's official instructions on installing Rule
 | [`markdown-file-boundaries.md`](rules/markdown-file-boundaries.md) | `always_on` | Enforce allowlist-only Markdown file access: restrict agent Markdown writes strictly to `AGENTS.md`, rules, and scratchpads; all other Markdown files are human-exclusive. |
 | [`plan-before-acting.md`](rules/plan-before-acting.md) | `always_on` | Default to planning mode, prohibit unapproved file or system mutations, and require re-reviewing the agreed plan before acting without deviation. |
 | [`preview-options-and-diffs.md`](rules/preview-options-and-diffs.md) | `always_on` | Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user. |
+| [`surgical-diffs.md`](rules/surgical-diffs.md) | `always_on` | Enforce minimal, surgical diffs, confine linters and formatters to modified lines, prohibit drive-by refactoring, and defer out-of-scope cleanups to dedicated tasks. |
 
 ## License
 
