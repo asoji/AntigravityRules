@@ -30,3 +30,7 @@ When creating or editing rule files in `rules/`:
   - Start the Markdown body with a single `# Title` heading followed by concise, imperative bullet points. Use `##` subsections and fenced code blocks when format specifications or examples add clarity.
   - Ensure all rule prose complies with `rules/direct-communication.md` (concise, technical phrasing, no filler, and no em-dashes used in place of standard punctuation).
 - **Synchronization**: Update the rule index in `AGENTS.md` whenever files in `rules/` are added, renamed, or removed.
+- **Plugin Versioning (0ver)**: Maintain the plugin version in `plugin.json` adhering to Zero-based Versioning (`0.MINOR.PATCH`):
+  - Increment the `MINOR` version (e.g., `0.1.0` -> `0.2.0`) whenever a new rule or large architectural change is added.
+  - Increment the `PATCH` version (e.g., `0.1.0` -> `0.1.1`) whenever a small fix, typo correction, or minor edit is made to existing rules.
+  - Keep the major version pinned to `0`.
