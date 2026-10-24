@@ -13,6 +13,7 @@ This repository stores personal rule definitions for Google Antigravity under `r
 - `rules/markdown-file-boundaries.md`: Enforce allowlist-only Markdown file access: restrict agent Markdown writes strictly to `AGENTS.md`, rules, and scratchpads; all other Markdown files are human-exclusive.
 - `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and require re-reviewing the agreed plan before acting without deviation.
 - `rules/preview-options-and-diffs.md`: Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user.
+- `rules/surgical-diffs.md`: Enforce minimal, surgical diffs, confine linters and formatters to modified lines, prohibit drive-by refactoring, and defer out-of-scope cleanups to dedicated tasks.
 
 ## Rule Authoring & Maintenance Conventions
 
