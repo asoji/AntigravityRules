@@ -6,12 +6,12 @@ This repository stores personal rule definitions for Google Antigravity under `r
 
 - `rules/agent-attribution.md`: Require plaintext attribution footers on agent-authored PRs, issues, reviews, and comments, add single-line provenance comments on non-trivial AI-generated code blocks, and prohibit AI identities in package manifests, license headers, tags, or release notes.
 - `rules/direct-communication.md`: Enforce direct, concise, and technical communication without filler, sycophancy, apologetic meta-commentary, or unnecessary em-dashes.
-- `rules/explain-before-executing.md`: Announce all tool calls, file reads, and shell commands with their target paths/arguments and rationale in text before execution.
+- `rules/explain-before-executing.md`: Require announcing all tool calls, file reads, and shell commands with their target paths/arguments and rationale in text before execution.
 - `rules/git-commit-attribution.md`: Use the `Assisted-by:` trailer (`AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]`) instead of `Co-authored-by:`, never add `Signed-off-by:`, and deduplicate trailers on AI-assisted Git commits.
 - `rules/git-pr-workflow.md`: Enforce a branch-and-PR Git workflow using standard `git` tooling, concise under-50-character commits, and no direct commits to the default branch.
-- `rules/github-stacked-prs.md`: Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains when working on GitHub repositories.
-- `rules/markdown-file-boundaries.md`: Enforce allowlist-only Markdown file access, restricting agent Markdown writes to AGENTS.md, rules, and scratchpads.
-- `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and re-review the agreed plan before acting without deviation.
+- `rules/github-stacked-prs.md`: Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains when working on repositories hosted on GitHub.
+- `rules/markdown-file-boundaries.md`: Enforce allowlist-only Markdown file access: restrict agent Markdown writes strictly to `AGENTS.md`, rules, and scratchpads; all other Markdown files are human-exclusive.
+- `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and require re-reviewing the agreed plan before acting without deviation.
 - `rules/preview-options-and-diffs.md`: Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user.
 
 ## Rule Authoring & Maintenance Conventions
