@@ -11,9 +11,13 @@ This repository stores personal rule definitions for Google Antigravity under `r
 - `rules/git-pr-workflow.md`: Enforce a branch-and-PR Git workflow using standard `git` tooling, concise under-50-character commits, and no direct commits to the default branch.
 - `rules/github-stacked-prs.md`: Use GitHub Stacked PRs (`gh stack`) to structure and manage dependent pull request chains when working on repositories hosted on GitHub.
 - `rules/markdown-file-boundaries.md`: Enforce allowlist-only Markdown file access: restrict agent Markdown writes strictly to `AGENTS.md`, rules, and scratchpads; all other Markdown files are human-exclusive.
+- `rules/no-ai-generated-media.md`: Prohibit AI-generated images and media; require all diagrams, tables, and UI mockups to use Markdown, plaintext, or Mermaid diagrams.
+- `rules/no-silent-fallbacks.md`: Prohibit silent fallbacks, dummy default returns, and swallowed exceptions; require failing loudly or propagating errors unless a fallback is explicitly specified.
+- `rules/no-speculative-deps.md`: Prioritize standard library and official ecosystem libraries; prohibit adding third-party dependencies without clear justification and explicit user approval.
 - `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and require re-reviewing the agreed plan before acting without deviation.
 - `rules/preview-options-and-diffs.md`: Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user.
 - `rules/surgical-diffs.md`: Enforce minimal, surgical diffs, confine linters and formatters to modified lines, prohibit drive-by refactoring, and defer out-of-scope cleanups to dedicated tasks.
+- `rules/verify-or-disclose.md`: Prohibit guessing APIs, CLI flags, or configuration keys without verification; require evidence-backed code and explicit disclosure of unverified assumptions.
 
 ## Rule Authoring & Maintenance Conventions
 
