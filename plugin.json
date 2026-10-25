@@ -1,6 +1,6 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "AntigravityRules",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "asojidev's Google Antigravity Rules, mainly for their work"
 }
