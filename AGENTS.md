@@ -15,6 +15,7 @@ This repository stores personal rule definitions for Google Antigravity under `r
 - `rules/plan-before-acting.md`: Default to planning mode, prohibit unapproved file or system mutations, and require re-reviewing the agreed plan before acting without deviation.
 - `rules/preview-options-and-diffs.md`: Require creating temporary clickable preview files and displaying inline diffs whenever presenting multiple code or file options to the user.
 - `rules/surgical-diffs.md`: Enforce minimal, surgical diffs, confine linters and formatters to modified lines, prohibit drive-by refactoring, and defer out-of-scope cleanups to dedicated tasks.
+- `rules/verify-or-disclose.md`: Prohibit guessing APIs, CLI flags, or configuration keys without verification; require evidence-backed code and explicit disclosure of unverified assumptions.
 
 ## Rule Authoring & Maintenance Conventions
 
