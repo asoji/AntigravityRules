@@ -10,7 +10,13 @@ My stances on AI/LLMs is still nearly the same as it always is if you know me, a
 > Installing as an [Antigravity Plugin](https://antigravity.google/docs/plugins) is preferred (`agy plugin install https://github.com/asoji/AntigravityRules`).
 
 To install, follow Google Antigravity's official instructions on installing Rules or Plugins:
-- **Plugin (Preferred)**: [Plugins Documentation](https://antigravity.google/docs/plugins) (`agy plugin install https://github.com/asoji/AntigravityRules`)
+- **Plugin via CLI (Preferred)**: [Plugins Documentation](https://antigravity.google/docs/plugins) (`agy plugin install https://github.com/asoji/AntigravityRules`)
+- **Plugin via Antigravity App (Without `agy` CLI)**:
+  1. Clone or download this repository into your Antigravity plugins directory:
+     - **Global**: `~/.gemini/config/plugins/AntigravityRules` (Windows: `%USERPROFILE%\.gemini\config\plugins\AntigravityRules`)
+     - **Workspace**: `.agents/plugins/AntigravityRules`
+  2. In the Antigravity app, open **Customizations** in the left sidebar.
+  3. Select the **Installed** tab and confirm **AntigravityRules** is listed and enabled (toggle it on if needed).
 - **Standalone Rules**: [Project Scoped](https://antigravity.google/docs/rules/#directory-scoped-rules) / [Global](https://antigravity.google/docs/rules/#global-rules)
 
 ## Rules
