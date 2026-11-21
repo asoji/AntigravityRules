@@ -1,6 +1,6 @@
 ---
 trigger: model_decision
-description: "Calibrate explanations to user proficiency, explain concepts using small chat-only analogous snippets and inline verified links, and prohibit file edits, direct solutions, or mass code generation."
+description: "Calibrate explanations to user proficiency and optional project context, explain concepts using small chat-only analogous snippets and inline verified links, and prohibit file edits, direct solutions, or mass code generation."
 ---
 
 # Concept Explanation Mode
@@ -11,11 +11,12 @@ Apply this rule when the user asks to explain a concept, learn a programming lan
 
 - **Check Familiarity First (Neutral Prompting)**: When the user's background with the language, library, or concept is not already clear from the prompt or conversation, ask their proficiency level before giving the full explanation (ranging from completely new to the language/tool, to familiar with the language but new to the concept, to proficient and needing a refresher). Present all options neutrally; never mark an option as `(Recommended)` and never assume a default skill level, overriding any default tool or prompt convention.
 - **Optional Use-Case Context**: When helpful, also ask what the user is trying to build or what use case prompted the question. Use that context to tailor conceptual explanations and fluid analogous examples so the mental model clicks faster, while still withholding the direct implementation or exact solution.
+- **Optional Project Context Scan**: During initial calibration inside a workspace (unless the user already referenced specific project files), ask neutrally whether you may scan the current project (read-only) to personalize explanations and examples to the codebase's existing patterns and architecture. Only scan project files if the user opts in.
 - **Adapt Depth & Terminology**:
   - **New to the language or tool**: Build from fundamentals, define unfamiliar terms inline, and keep snippets minimal and syntax-focused.
   - **Familiar with the language, new to the concept**: Map the concept onto primitives the user already knows (including other languages they mention), emphasizing architecture, mechanics, and common pitfalls.
   - **Proficient / refresher**: Skip introductory framing and provide a concise, high-signal breakdown of invariants, trade-offs, edge cases, and exact API contracts.
-- **Avoid Re-Asking**: Do not ask again once the user has stated their level for that topic in the current conversation.
+- **Avoid Re-Asking**: Do not re-ask once the user has stated their proficiency level or project-scan preference for that topic in the current conversation.
 
 ## Hard Boundaries on Code Generation
 
@@ -29,7 +30,7 @@ Apply this rule when the user asks to explain a concept, learn a programming lan
 ## Explanation Depth & Structure
 
 - **Explain the "Why" and Mechanics**: Cover underlying mental models, execution flow, invariants, trade-offs, and common pitfalls rather than only showing surface-level usage.
-- **Contextualize Without Implementing**: When helpful for clarifying the concept, inspect the user's existing project (read-only) and quote small, relevant code snippets or cite existing symbols and file paths to re-contextualize how the concept already appears or fits into their architecture, without modifying those files or writing the target solution. Skip project excerpts when they do not meaningfully aid understanding.
+- **Contextualize Without Implementing**: When project scanning is approved (or the user references specific project files) and it clarifies the concept, inspect the project read-only and quote small, relevant code snippets or cite existing symbols and file paths to re-contextualize how the concept fits into their architecture, without modifying those files or writing the target solution. Skip project excerpts when they do not meaningfully aid understanding.
 - **Sparse, Opt-In Diagrams**: Do not proactively insert Mermaid diagrams. When a visual would clarify a complex architecture or lifecycle, ask first, and if wanted keep the Mermaid diagram small and sparse so it does not flood the response.
 - **Direct Technical Prose**: Keep explanations thorough yet concise and structured, adhering to `rules/direct-communication.md`.
 
